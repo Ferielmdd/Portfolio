@@ -10,25 +10,60 @@ body{
     margin-left: auto; 
     margin-right: auto; 
   }
-
   h1{
     text-align: center; 
     font-size: 2.25rem;
+    margin-top: 40vh; 
     letter-spacing: 0.2em;
     color: #000000;
     opacity: 0.6;
     font-family: 'Monument Extended';
-    font-weight: normal;
-    font-style: normal;
   }
   h2{
     font-family: 'Monument Extended';
-    font-weight: normal;
-    font-style: normal;
     text-align: center; 
+    margin-top: 3vh;
     font-size: 1.875rem; 
     letter-spacing: 0.06em;
     opacity: 0.5;
-    
+    overflow:hidden;
+    white-space:nowrap;
+    position: relative;
+    color: #F8F5F5;
+    text-shadow: 1px 0 0 #000000, -1px 0 0 #000000, 0 1px 0 #000000, 0 -1px 0 #000000, 
+    1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+    -webkit-animation: scroll 30s infinite linear;;
+    -moz-animation: scroll 30s infinite linear;
+    -o-animation: scroll 30s infinite linear;
+    animation: scroll 30s infinite linear;
   }
+@keyframes scroll{
+    0%   {left: -1000px;}
+    100% {left: -0px;}
+}
+.vectorOne {
+  position: absolute;
+  width: 33px;
+  height: 0px;
+  left: 191px;
+  top: 705px;
+  border: 1px solid #000000;
+  transform: rotate(90deg);
+}
+.contact {
+  position: absolute;
+width: 108px;
+height: 23px;
+left: 138px;
+top: 670px;
+
+font-family: 'Monument Extended'; 
+font-size: 12px;
+text-align: center;
+letter-spacing: 0.2em;
+
+color: #000000;
+}
+
+
 } 
