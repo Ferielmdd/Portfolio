@@ -4,8 +4,8 @@ body{
 
   .logo{
     margin-top: 12px; 
-    width: 34.9px; 
-    height: 39.12px; 
+    width: 75px; 
+    height: 72px; 
     display: block; 
     margin-left: auto; 
     margin-right: auto; 
@@ -22,48 +22,71 @@ body{
   h2{
     font-family: 'Monument Extended';
     text-align: center; 
-    margin-top: 3vh;
-    font-size: 1.875rem; 
+    margin-top: 1.5vh;
+    font-size: 2rem; 
     letter-spacing: 0.06em;
     opacity: 0.5;
-    overflow:hidden;
     white-space:nowrap;
     position: relative;
     color: #F8F5F5;
     text-shadow: 1px 0 0 #000000, -1px 0 0 #000000, 0 1px 0 #000000, 0 -1px 0 #000000, 
     1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
-    -webkit-animation: scroll 30s infinite linear;;
-    -moz-animation: scroll 30s infinite linear;
-    -o-animation: scroll 30s infinite linear;
-    animation: scroll 30s infinite linear;
-  }
-@keyframes scroll{
-    0%   {left: -1000px;}
-    100% {left: -0px;}
-}
+    animation: moveText linear 8s  infinite;
+    @keyframes moveText {
+      from { transform: translateX(880px); }
+      to { transform: translateX(-1100px); }
+    }
+  }    
+    
+
 .vectorOne {
   position: absolute;
-  width: 33px;
-  height: 0px;
-  left: 191px;
-  top: 705px;
+  width: 1.25rem;
+  left: 10.625rem;
+  top: 44.375rem;
   border: 1px solid #000000;
   transform: rotate(90deg);
 }
 .contact {
   position: absolute;
-width: 108px;
-height: 23px;
-left: 138px;
-top: 670px;
+  width: 6.75rem;
+  height: 1.4375rem;
+  left: 8.125rem;
+  top: 42.5rem;
+  font-family: 'Monument Extended'; 
+  font-size: 0.75rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-decoration: none;
 
-font-family: 'Monument Extended'; 
-font-size: 12px;
-text-align: center;
-letter-spacing: 0.2em;
-
-color: #000000;
+  &:hover {
+    text-decoration: underline; 
+  }
 }
+.vectorTwo {
+  position: absolute;
+width: 36px;
+height: 0px;
+left: 365px;
+top: 535px; 
+border: 1px solid #000000;
+}
+.work {
+  position: absolute;
+  width: 6.75rem;
+  height: 1.4375rem;
+  left: 270px;
+  top: 530px;
+  font-family: 'Monument Extended';
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #000000; 
+  text-decoration: none;
 
-
+    &:hover {
+      text-decoration: underline; 
+    }
+}
 } 
