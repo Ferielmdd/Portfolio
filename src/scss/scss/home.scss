@@ -1,14 +1,12 @@
-body{
+/* body{
   background-color: #F8F5F5; 
-  width: 100%; 
 
   .logo{
     margin-top: 12px; 
     width: 75px; 
     height: 72px; 
     display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
+    margin: 0 auto;  
   }
   h1{
     text-align: center; 
@@ -26,7 +24,7 @@ body{
     font-size: 2rem; 
     letter-spacing: 0.06em;
     opacity: 0.5;
-    white-space:nowrap;
+ white-space:nowrap;   
     position: relative;
     color: #F8F5F5;
     text-shadow: 1px 0 0 #000000, -1px 0 0 #000000, 0 1px 0 #000000, 0 -1px 0 #000000, 
@@ -89,4 +87,50 @@ border: 1px solid #000000;
       text-decoration: underline; 
     }
 }
-} 
+}  */
+
+
+body {
+  background-color: #F8F5F5; 
+ margin: 0; 
+
+  .logo { 
+    width: 150px;
+    height: 140px;
+    margin-right: 50vh; 
+    margin-left: 50vh; 
+    margin-top: 2vh;
+  }
+
+  h1 {
+    font-size: 5rem;
+    position: absolute;
+    top: 50%; left: 40%;
+    margin-top: 60vh; 
+    letter-spacing: 0.2em;
+    opacity: 0.6;
+    font-family: 'Monument Extended';
+  }
+
+  h2{
+    font-size: 4.5rem; 
+    position: absolute; 
+    top: 50%; left: 40%;
+    margin-top: 75vh; 
+    letter-spacing: 0.2em;
+    opacity: 0.6;
+    font-family: 'Monument Extended';
+    white-space: nowrap; 
+    color: #F8F5F5;
+    text-shadow: 1px 0 0 #000000, -1px 0 0 #000000, 0 1px 0 #000000, 0 -1px 0 #000000, 
+    1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+    animation: moveText linear 8s  infinite;
+    @keyframes moveText {
+      from { transform: translateX(880px); }
+      to { transform: translateX(-1100px); }
+    }
+  }
+
+
+
+}
